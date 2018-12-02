@@ -1,0 +1,43 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "qrBorrowers",
+  "short_name": "qrBorrowers",
+  "version": "com.phonegap.helloworld",
+  "description": "QR reader and generator borrowing app.",
+  "author": "PhoneGap Team",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    },
+    {
+      "src": "res/icon/android/icon-36-ldpi.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    },
+    {
+      "src": "res/icon/android/icon-48-mdpi.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    },
+    {
+      "src": "res/icon/android/icon-72-hdpi.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    },
+    {
+      "src": "res/icon/android/icon-96-xhdpi.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    },
+    {
+      "src": "res/icon/android/icon-96-xhdpi.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
+  "orientation": "any",
+  "start_url": "index.html"
+}
