@@ -1,4 +1,4 @@
-# A Blank PhoneGap App
+# qrBorrowers a PhoneGap App
 
 ## Usage
 
