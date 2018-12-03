@@ -7,7 +7,7 @@ function init() {
         addEventListener("touchend", startScan, false);
 	
 	resultDiv = document.querySelector("#results");
-
+	
 	document.getElementById("text4").value = resultDiv;
 }
 
