@@ -8,7 +8,7 @@ function init() {
 	
 	resultDiv = document.querySelector("#results");
 	
-	document.getElementById("text4").value = resultDiv;
+	//resultDiv = document.getElementById("#text4");
 }
 
 function startScan() {

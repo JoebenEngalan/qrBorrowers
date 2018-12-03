@@ -25,25 +25,31 @@
     </Label>
 
     <div class="borrow">
-        
-        
+
+
         <input id="text1" type="text" placeholder="Borrower Number" />
 
         <input id="text2" type="text" placeholder="Borrower Last Name" onfocus="this.value=''" />
-        
+
         <input id="text3" type="text" placeholder="Borrower First Name" onfocus="this.value=''" />
-        
-        <input id="text4" name="text4" type="text" placeholder="Book Info" onfocus="this.value=''" />
-        
-        <input id="text6" type="date" placeholder="Date Borrowed"/>
+
+        <input id="text4" type="text" placeholder="Book Info" />
+
+        <input id="text6" type="date" placeholder="Date Borrowed" />
 
         <br>
-    
+
     </div>
 
-    <p id="results"></p>
+    <div class="borrow">
+        
+        <p id="results"></p>
 
-    <button id="startScan">Start Scan</button>
+        <button id="startScan">Start Scan</button>
+
+        <button id="savedb">Save </button>
+
+    </div>
 
     <script type="text/javascript" src="js/scanQR.js"></script>
 
