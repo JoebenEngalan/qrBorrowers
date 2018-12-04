@@ -1,15 +1,16 @@
 document.getElementById("downloadFile").addEventListener("click", downloadFile);
 
 
+
 function downloadFile() {
     
     var fileTransfer = new FileTransfer();
-
-    var uri = "qrcode";
+    
+    var uri = "generate.html";
     var fileURL =  "///storage/emulated/0/DCIM/myFile";
  
     fileTransfer.download(
-       uri, fileURL, function(entry) {
+        uri, fileURL, function(entry) {
           console.log("download complete: " + entry.toURL());
        },
          
