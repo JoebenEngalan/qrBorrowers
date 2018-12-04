@@ -6,9 +6,9 @@ function init() {
     document.querySelector("#startScan").
         addEventListener("touchend", startScan, false);
 	
-	resultDiv = document.querySelector("#results");
+	//resultDiv = document.querySelector("#results");
 	
-	resultDiv = document.getElementById("#text4");
+	resultDiv = document.querySelector("#text4");
 	
 }
 
@@ -21,7 +21,7 @@ function startScan() {
             result.format;
 			result.cancelled;
 
-			resultDiv.innerHTML = s;
+			resultDiv.value = s;
         }, 
         
 
