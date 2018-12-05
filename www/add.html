@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>qrBorrowers</title>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/databasehandler.js"></script>
 </head>
 
 <body>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/qrcode.js"></script>
-
+    
     <nav>
         <div class="topnav">
             <a href="add.html">Add</a>
@@ -25,19 +26,19 @@
 
     <Label><h1> &nbsp; Add a Borrower </h1></Label>
 
-    <div class="add">
+    <div data-role="main"class="add">
 
-        <input id="text1" type="text" placeholder="Borrower Number" onfocus="this.value=''" />
+        <input id="txtNumber" type="text" placeholder="Borrower Number" onfocus="this.value=''" />
 
-        <input id="text2" type="text" placeholder="Borrower Last Name" onfocus="this.value=''" />
+        <input id="txtLname" type="text" placeholder="Borrower Last Name" onfocus="this.value=''" />
         
-        <input id="text3" type="text" placeholder="Borrower First Name" onfocus="this.value=''" />
+        <input id="txtFname" type="text" placeholder="Borrower First Name" onfocus="this.value=''" />
         
-        <input id="text4" type="text" placeholder="Address" onfocus="this.value=''" />
+        <input id="txtaddress" type="text" placeholder="Address" onfocus="this.value=''" />
 
-        <input id="text5" type="text" placeholder="Email" onfocus="this.value=''" />
+        <input id="txtEmail" type="text" placeholder="Email" onfocus="this.value=''" />
 
-        <input id="text6" type="text" placeholder="Mobile Number" onfocus="this.value=''" />
+        <input id="txtMobNum" type="text" placeholder="Mobile Number" onfocus="this.value=''" />
 
         <br>
 
@@ -45,7 +46,7 @@
 
     <div class="buttonright">
         
-        <button id="Add">Add</button>
+        <button id="Add" onclick="addBorrower()">Add</button>
         
         <button id="Cancel" onclick="location.href='index.html';" >Cancel</button>
     </div>
