@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qrBorrowers</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <script type="text/javascript" src="cordova.js"></script>
+
+    <nav>
+        <div class="topnav">
+            <a href="add.html">Add</a>
+            <a href="borrow.html">Borrow</a>
+            <a href="return.html">Return</a>
+            <a href="generate.html">QR code</a>
+        </div>
+    </nav>
+
+    <Label>
+        <h1> &nbsp; Borrow a Book </h1>
+    </Label>
+
+    <div class="borrow">
+
+
+        <input id="text1" type="text" placeholder="Borrower Number" onfocus="this.value=''"/>
+
+        <input id="text2" type="text" placeholder="Borrower Last Name" onfocus="this.value=''" />
+
+        <input id="text3" type="text" placeholder="Borrower First Name" onfocus="this.value=''" />
+
+        <input id="text4" type="text" placeholder="Book Info"/>
+
+        <input id="text6" type="date" placeholder="Date Borrowed" />
+
+        <br>
+
+    </div>
+
+    <div class="borrow">
+        
+        <p id="results"></p>
+
+        <button id="startScan">Start Scan</button>
+
+        <button id="savedb">Save </button>
+
+    </div>
+
+    <script type="text/javascript" src="js/scanQR.js"></script>
+
+</body>
+
+</html>
