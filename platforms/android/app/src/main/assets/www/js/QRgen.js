@@ -30,10 +30,9 @@ $("#btnin").
 
 
     }).
-    on("keydown", function (e) {
+on("keydown", function (e) {
         if (e.keyCode == 13) {
             makecode();
         }
-    });
-
-
+    }
+);
