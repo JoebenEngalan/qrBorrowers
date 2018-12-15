@@ -1,7 +1,5 @@
 document.getElementById("downloadFile").addEventListener("click", downloadFile);
 
-
-
 function downloadFile() {
     
     var fileTransfer = new FileTransfer();

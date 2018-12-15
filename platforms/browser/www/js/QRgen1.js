@@ -13,7 +13,7 @@ qrcode.makeCode(elText);
 
 makeCode();
 
-$("#add").
+$("#btnin").
 on("click", function () {
     makeCode();
     $("#txtNumber").empty();

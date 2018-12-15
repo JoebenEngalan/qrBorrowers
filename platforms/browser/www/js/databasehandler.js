@@ -9,7 +9,7 @@ var databasehandler = {
             function(tx) {
                 ////
                 tx.executeSql(
-                    " create table if not exists borrowers(borrowerID integer primary key, Lname text, Fname text, Fname text, addresses text, Email text, MobileNumber integer) ",
+                    " create table if not exists borrowers(borrowerID integer primary key, Lname text, Fname text, Fname text) ",
                     [],
                     function(tx,result){},
                     function(tx,error) {
