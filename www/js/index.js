@@ -5,14 +5,8 @@ function addBorrower(){
     var borrowerID = $("#txtNumber").val();
     var Lname = $("#txtLname").val();
     var Fname = $("#txtFname").val();
-    var addresses = $("#txtaddress").val();
-    var email = $("#txtEmail").val();
-    var Mobile = $("#txtMobNum").val();
-    borrowerhandler.addBorrower(borrowerID,Lname,Fname,addresses,email,Mobile);
+    borrowerhandler.addBorrower(borrowerID,Lname,Fname);
     $("#txtNumber").val("");
     $("#txtLname").val("");
-    $("#txtFname").val("");
-    $("#txtaddress").val("");
-    $("#txtEmail").val("");
-    $("#txtMobNum").val("");
+    $("#txtFname").val(""); 
 }

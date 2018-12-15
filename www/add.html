@@ -10,6 +10,7 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/qrcode.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/html2canvas.js"></script>
     <script type="text/javascript" src="js/databasehandler.js"></script>
     <script type="text/javascript" src="js/borrowerhandler.js"></script>
 </head>
@@ -40,17 +41,28 @@
 
     </div>
 
-    <div class="buttonright">
+    <div class="buttoncenter">
         
-        <button id="btnin" class="Generate">Generate</button>
+        <button id="btnin" name="capture-image" class="Generate">Generate</button>
         
         <button id="Cancel" onclick="location.href='index.html';" >Cancel</button>
-        
-        <div id="qrcode1" class='container'></div>
-    
+
+        <div id="qrcode1" class="source-container"></div>
+
+        <h1> &nbsp; Screenshot</h1>
+
+        <img id="screenshot"/>
+
+    </div>
+
+    <div class="buttoncenter">
+
+        <button id="Cancel" onclick="location.href='index.html';">Cancel</button>
+
     </div>
    
     <script type="text/javascript" src="js/QRgen1.js"></script>
+    <script type="text/javascript" src="js/save.js"></script>
 
 </body>
 
