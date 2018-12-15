@@ -11,6 +11,7 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/qrcode.js"></script>
 <script type="text/javascript" src="js/html2canvas.js"></script>
+<script type="text/javascript" src="js/save.js"></script>
 
 <body>
     <script type="text/javascript" src="cordova.js"></script>
@@ -46,7 +47,9 @@
 
         <button id="downloadFile" name="downloadFile">Save</button>
         
-        <div id="qrcode" class='container'></div>
+        <div id="qrcode" class="source-container"></div>
+        
+        <img id="screenshot" alt="Captured screenshot" />
 
     </div>
 
@@ -54,18 +57,11 @@
 
         <button id="Cancel" onclick="location.href='index.html';">Cancel</button>
 
-        <input type='button' id='but_screenshot' value='Take screenshot' onclick='screenshot();'><br/>
+        <button id="capture-image" name="capture-image">Capture</button>
 
     </div>
-
-    <script type='text/javascript'>
-        function screenshot() {
-            html2canvas(document.body).then(function (canvas) {
-                document.body.appendChild(canvas);
-            });
-        }
-    </script>
-
+    
+    <script type="text/javascript" src="js/save.js"></script>
     <script type="text/javascript" src="js/QRgen.js"></script>
     <script type="text/javascript" src="js/down.js"></script>
 
