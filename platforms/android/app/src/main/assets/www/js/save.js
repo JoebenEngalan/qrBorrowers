@@ -29,9 +29,9 @@ var app = {
                         to: '',
                         cc: '',
                         bcc: [],
-                        subject: '',
-                        attachments: imgData,
-                        attachments: '<img src="' + imgData + '">',
+                        subject: 'Test',
+                        attachments: ['imgData'],
+                        //body:'<img src="' + imgData + '">',
                         isHtml:true
                     });
                 });
