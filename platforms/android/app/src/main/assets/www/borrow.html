@@ -7,7 +7,7 @@
     <title>qrBorrowers</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/index.1.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/databasehandler.js"></script>
     <script type="text/javascript" src="js/borrowerhandler.js"></script>
 </head>
@@ -31,21 +31,21 @@
     <div class="borrow">
 
 
-        <input id="txtNumber1" type="text" placeholder="Borrower Number" onfocus="this.value=''" />
+        <input id="txtNumber" type="text" placeholder="Borrower Number" onfocus="this.value=''" />
 
     </div>
 
     <div class="buttonright">
 
-        <button id="Search">Search</button>
+        <button id="startScan1">Search</button>
 
     </div>
 
     <div class="borrow">
         
-        <input id="txtFname1" type="text" placeholder="Borrower Last Name" onfocus="this.value=''" />
+        <input id="txtFname" type="text" placeholder="Borrower Last Name" onfocus="this.value=''" />
 
-        <input id="txtLname1" type="text" placeholder="Borrower First Name" onfocus="this.value=''" />
+        <input id="txtLname" type="text" placeholder="Borrower First Name" onfocus="this.value=''" />
 
         <input id="bookInfo" type="text" placeholder="Book Info" />
 
@@ -59,11 +59,12 @@
 
         <button id="startScan">Start Scan</button>
 
-        <button id="savedb" onclick="bookborrow()">Save</button>
+        <button id="savedb">Save</button>
 
     </div>
 
     <script type="text/javascript" src="js/scanQR.js"></script>
+    <script type="text/javascript" src="js/scanQR.1.js"></script>
 
 </body>
 
