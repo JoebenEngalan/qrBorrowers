@@ -9,6 +9,7 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/databasehandler.js"></script>
+    <script type="text/javascript" src="js/borrowerhandler.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
     <div class="borrow">
 
 
-        <input id="txtNumber" type="text" placeholder="Borrower Number" onfocus="this.value=''" />
+        <input id="txtNumber1" type="text" placeholder="Borrower Number" onfocus="this.value=''" />
 
     </div>
 
@@ -42,14 +43,13 @@
 
     <div class="borrow">
         
+        <input id="txtFname1" type="text" placeholder="Borrower Last Name" onfocus="this.value=''" />
 
-        <input id="txtFname" type="text" placeholder="Borrower Last Name" onfocus="this.value=''" />
-
-        <input id="txtLname" type="text" placeholder="Borrower First Name" onfocus="this.value=''" />
+        <input id="txtLname1" type="text" placeholder="Borrower First Name" onfocus="this.value=''" />
 
         <input id="bookInfo" type="text" placeholder="Book Info" />
 
-        <input id="text6" type="date" placeholder="Date Borrowed" />
+        <input id="datebrw" type="date" placeholder="Date Borrowed" />
 
         <br>
 
@@ -59,7 +59,7 @@
 
         <button id="startScan">Start Scan</button>
 
-        <button id="savedb">Save</button>
+        <button id="savedb" onclick="bookborrow()">Save</button>
 
     </div>
 

@@ -18,7 +18,7 @@ var databasehandler = {
                 );
 
                 tx.executeSql(
-                    " create table if not exists book(borrowerID integer primary key, Lname text, Fname text,bookinfo text,datebr date) ",
+                    " create table if not exists book(borrowerID integer primary key, Lname text, Fname text, bookinfo text, datebr date) ",
                     [],
                     function (tx, result) { },
                     function (tx, error) {
