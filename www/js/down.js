@@ -4,8 +4,10 @@ function downloadFile() {
     
     var fileTransfer = new FileTransfer();
     
-    var uri = '<img src="'+imgData+'">';
-    var fileURL =  "///storage/emulated/0/DCIM/myFile";
+    var imgData = document.getElementById('screenshot').src;
+    
+    var uri = imgData;
+    var fileURL =  "New folder";
  
     fileTransfer.download(
         uri, fileURL, function(entry) {

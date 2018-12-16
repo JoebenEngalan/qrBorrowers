@@ -15,14 +15,14 @@ var app = {
             html2canvas(element, {
                 onrendered: function (canvas) {
                     var dataURL = canvas.toDataURL();
-                    document.getElementById("screenshot").src = dataURL;
+                    document.getElementById('screenshot').src = dataURL;
                 }
             });
 
         }, false);
 
         document.getElementById('email-image').addEventListener('click', function () {
-            var imgData = document.getElementById("screenshot").src;
+            var imgData = document.getElementById('screenshot').src;
             cordova.plugins.email.isAvailable(
                 function (isAvailable) {
                     cordova.plugins.email.open({
@@ -30,13 +30,14 @@ var app = {
                         cc: '',
                         bcc: [],
                         subject: '',
-                        body: '<img src="' + imgData + '">'
+                        attachments: imgData,
+                        attachments: '<img src="' + imgData + '">',
+                        isHtml:true
                     });
                 });
 
         }, false);
     },
-    // Update DOM on a Received Event
     receivedEvent: function (id) {
 
     }
