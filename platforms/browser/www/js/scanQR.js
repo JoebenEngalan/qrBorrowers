@@ -6,7 +6,7 @@ function init() {
     document.querySelector("#startScan").
 		addEventListener("touchend", startScan, false);
 		
-	resultDiv = document.querySelector("#text4");
+	resultDiv = document.querySelector("#bookInfo");
 	
 }
 

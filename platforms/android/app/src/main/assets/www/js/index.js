@@ -10,3 +10,13 @@ function addBorrower(){
     $("#txtLname").val("");
     $("#txtFname").val(""); 
 }
+
+function bookborrow(){
+    var borrowerID = $("#txtNumber").val();
+    var Lname = $("#txtLname").val();
+    var Fname = $("#txtFname").val();
+    borrowerhandler.bookborrow(borrowerID,Lname,Fname,bookinfo);
+    $("#txtNumber").val("");
+    $("#txtLname").val("");
+    $("#txtFname").val(""); 
+}
