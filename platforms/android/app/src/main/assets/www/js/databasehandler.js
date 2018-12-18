@@ -8,7 +8,7 @@ var databasehandler = {
         this.db.transaction(
             
             function(tx) {
-                tx.executeSql(" create table if not exists borrowers(borrowerID integer primary key, Lname text, Fname text) ",
+                tx.executeSql(" create table if not exists borrow(_ID integer primary key,borrowerID integer, Lname text, Fname text,Bookinfo text, Dates date) ",
                  [],
                     function(tx,result){},
                     function(tx,error) {
